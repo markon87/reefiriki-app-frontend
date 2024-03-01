@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import { useQuery } from "@apollo/client";
 
+// components
+import { Spinner } from './components/Spinner';
+
 // queries
 import { GET_FISHES } from "./queries/fishQueries";
 
@@ -12,7 +15,7 @@ import { Fish } from './pages/Fish';
 function App() {
   const { data, loading, error } = useQuery(GET_FISHES);
 
-  if (loading) return "Loading..."
+  if (loading) return <Spinner />
   if(error) return <pre>{error.message}</pre>
 
   return (

@@ -14,6 +14,7 @@ const Home = ({fishes}) => {
                 <div className="contaienr">
                     <div className="row">
                         <h2>Featured Fish</h2>
+                        <br />
                         <ul className="fish-list">
                             {fishes.getFishes.map((fish) => (
                             <li key={fish.id}>

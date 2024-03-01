@@ -1,16 +1,13 @@
-import { useQuery, gql } from "@apollo/client";
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { useQuery } from "@apollo/client";
 
-//components
-import Home from './components/Home'
+// queries
+import { GET_FISHES } from "./queries/fishQueries";
 
-const GET_FISHES = gql`
-query GetFishes {
-  getFishes {
-    id
-    name
-    imageUrl
-  }
-}`
+//Pages
+import Home from './pages/Home'
+import { NotFound } from './pages/NotFound';
+import { Fish } from './pages/Fish';
 
 function App() {
   const { data, loading, error } = useQuery(GET_FISHES);
@@ -20,7 +17,13 @@ function App() {
 
   return (
     <div className="App">
-      <Home fishes={data} />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home fishes={data} />} />
+          <Route path='/:id' element={<Fish />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

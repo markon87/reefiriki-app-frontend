@@ -1,3 +1,4 @@
+
 const Home = ({fishes}) => {
     return (
         <div>
@@ -16,8 +17,9 @@ const Home = ({fishes}) => {
                         <ul className="fish-list">
                             {fishes.getFishes.map((fish) => (
                             <li key={fish.id}>
-                                <img src={fish.imageUrl} alt="Fish" />
+                                <a href={`/${fish.id}`}><img src={fish.imageUrl} alt="Fish" /></a>
                                 <p>{fish.name}</p>
+                                <p><a href={`/${fish.id}`} className="btn">Learn More</a></p>
                             </li>
                             ))}
                         </ul>

@@ -38,7 +38,7 @@ header .hero-section{
   box-shadow: 0 5px 80px rgba(0, 0, 0, .3);
 }
 .welcome-box {
-  width: 40%;
+  width: 100%;
   /* background-color: rgba(255, 255, 255, .3); */
   padding: 75px;
   margin-top: 5%;

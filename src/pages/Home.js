@@ -18,9 +18,9 @@ const Home = ({fishes}) => {
                         <ul className="fish-list">
                             {fishes.getFishes.map((fish) => (
                             <li key={fish.id}>
-                                <a href={`/${fish.id}`}><img src={fish.imageUrl} alt="Fish" /></a>
-                                <p>{fish.name}</p>
-                                <p><a href={`/${fish.id}`} className="btn">Learn More</a></p>
+                                <a href={`/${fish.id}`} className="image-wrapper"><img src={fish.imageUrl} alt="Fish" /></a>
+                                <p className="fish-name">{fish.name}</p>
+                                <p><a href={`/${fish.id}`} className="btn more">Learn More</a></p>
                             </li>
                             ))}
                         </ul>

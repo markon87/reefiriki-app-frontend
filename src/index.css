@@ -88,8 +88,16 @@ ul.fish-list li {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5rem;
 }
+ul.fish-list li .image-wrapper{
+  display: block;
+  max-height: 308px;
+  overflow: hidden;
+}
 ul.fish-list li img{
   width: 100%;
+}
+ul.fish-list li p.fish-name{
+  margin: 15px 0;
 }
 .single-fish-page {
   padding: 35px 25px;
@@ -107,6 +115,11 @@ ul.fish-list li img{
 .single-fish-page .description{
   padding: 15px 50px 50px 50px;
 }
+.single-fish-page .description h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Lobster", sans-serif;
+}
 .btn{
   font-family: 'Lato';
   text-decoration: none;
@@ -117,6 +130,11 @@ ul.fish-list li img{
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+.btn.more{
+  margin-bottom: 25px;
+  display: inline-block;
+  font-size: .9rem;
 }
 
 

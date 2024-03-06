@@ -27,8 +27,6 @@ export default function Fish() {
               <p>
                 <strong>Family: </strong>
                 {data.getFish.family.name}
-                <br />
-                {data.getFish.family.id}
               </p>
               <p>
                 <strong>Care Level: </strong>

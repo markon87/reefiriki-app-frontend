@@ -46,11 +46,11 @@ export default function Fish() {
               </p>
               <p>
                 <strong>Max Fish Size: </strong>
-                {data.getFish.maxSize}
+                {data.getFish.maxSize} inch
               </p>
               <p>
                 <strong>Minimum Tank Size: </strong>
-                {data.getFish.minTankSize}
+                {data.getFish.minTankSize} gallon
               </p>
               <br />
               <Link

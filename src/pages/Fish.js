@@ -27,7 +27,7 @@ import { Spinner } from '../components/Spinner';
                     <p><strong>Max Fish Size: </strong>{data.getFish.maxSize}</p>
                     <p><strong>Minimum Tank Size: </strong>{data.getFish.minTankSize}</p>
                     <br />
-                    <Link to='/' className='btn'>Go Home</Link>
+                    <Link to='/' className='text-white text-sm no-underline py-2 px-4 bg-purple-600 rounded-lg uppercase font-semibold inline-block'>Go Home</Link>
                 </div>
             </div>
         </div>

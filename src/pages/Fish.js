@@ -44,7 +44,7 @@ export default function Fish() {
               </p>
               <p>
                 <strong>Reef Compatible: </strong>
-                {data.getFish.reefCompatibility ? "Yes" : "No"}
+                {data.getFish.reefCompatibility}
               </p>
               <p>
                 <strong>Max Fish Size: </strong>

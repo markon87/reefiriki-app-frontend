@@ -19,6 +19,9 @@ module.exports = {
       backgroundPosition: {
         "hero-offset-r-50": "top right 50%",
       },
+      boxShadow: {
+        "even-spread-large": "0 5px 75px rgba(0, 0, 0, .3)",
+      },
     },
   },
   plugins: [],

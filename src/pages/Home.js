@@ -1,11 +1,11 @@
-import { Header } from "../components/Header";
+import Hero from "../components/Hero";
 
-const Home = ({ fishes }) => {
+export default function Home({ fishes }) {
   return (
     <div>
       <div className="home">
-        <Header />
-        <div className="max-w-screen-xl mx-auto">
+        <Hero />
+        <div className="max-w-screen-xl mx-auto mb-20">
           <h2 className="text-5xl text-center font-body mb-7 font-bold">
             Featured Fish
           </h2>
@@ -35,6 +35,4 @@ const Home = ({ fishes }) => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}

@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import Fish from "./pages/Fish";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import About from "./pages/About";
 
 function App() {
   const { data, loading, error } = useQuery(GET_FISHES);
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home fishes={data} />} />
           <Route path="/:id" element={<Fish />} />
+          <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />

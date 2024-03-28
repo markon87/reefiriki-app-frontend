@@ -1,11 +1,16 @@
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 
 export default function About() {
   return (
     <>
       <Header />
-      <Hero />
+      <div className="bg-heroImage bg-hero-offset-r-50 lg:bg-center bg-cover pt-20 pb-4 px-0 mb-20 rounded-bl-[30px] rounded-br-[30px] lg:rounded-br-[30px] lg:rounded-tl-md shadow-lg">
+        <div className="max-w-screen-xl mx-auto py-4 md:py-24">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-title mb-9">
+            About Reefiriki
+          </h1>
+        </div>
+      </div>
       <div className="max-w-screen-xl mx-auto mb-20">
         <p>
           Reefiriki is a personal project born out of my deep-seated passion for

@@ -30,7 +30,7 @@ export default function Header() {
             {user ? (
               <>
                 <p className="text-indigo0600 mr-3 font-medium text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                  Hi {user.email}
+                  <Link to={"/user/" + user.id}>Hi {user.email}</Link>
                 </p>
                 <button
                   onClick={onLogout}

@@ -11,6 +11,7 @@ import { gql } from "graphql-tag";
 const LOGIN_USER = gql`
   mutation Mutation($loginInput: LoginInput) {
     loginUser(loginInput: $loginInput) {
+      id
       username
       email
       token
@@ -36,7 +37,7 @@ export default function Login(props) {
   const [loginUser, { loading }] = useMutation(LOGIN_USER, {
     update(proxy, { data: { loginUser: userData } }) {
       context.login(userData);
-      navigate("/");
+      navigate("/user/" + userData.id);
     },
     onError({ graphQLErrors }) {
       setErrors(graphQLErrors);

@@ -1,4 +1,4 @@
-import React, { useReducer, createContext } from "react";
+import { useReducer, createContext } from "react";
 import { jwtDecode } from "jwt-decode";
 
 const initialState = {
@@ -7,7 +7,7 @@ const initialState = {
 
 if (localStorage.getItem("token")) {
   // const decodedToken = jwtDecode(localStorage.getItem("token"));
-  console.log(localStorage.getItem("token"));
+  //console.log(localStorage.getItem("token"));
   const token = localStorage.getItem("token");
 
   if (token) {
